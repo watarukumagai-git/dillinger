@@ -27,7 +27,7 @@ HTMLは、ウェブページ作成のための言語である。
 
    [url1]: <https://dillinger.io/>
 
-- Document name：直接、markdownファイル（.md）を編集できる。
+- Document name：直接、markdownファイル名（.md）を編集できる。
 - PREVIEW AS：ブラウザの別タブに、HTMLやpdfとしてプレビュー画面を出力する。
 - EXPORT AS：markdownファイル（.md）をHTMLやpdfに変換したファイルを、ローカルに保存する。
 - SAVE TO：markdownファイル（.md）をクラウドサービスに保存する。
@@ -42,7 +42,7 @@ markdownでは、文字装飾、タイトル付け、箇条書き、表作成、
 
 
 
-# クラウドサービスとの連携方法
+# クラウドサービスとの連携
 公式サイトでは、DillingerはDropbox、Bitbucket、Github、Google Drive、One Driveのクラウドサービスと連携できる、と書いてある。
 
 しかし、下記の理由から、**Dropbox**と連携するのが一番利便性が良いと考えられる。
@@ -50,13 +50,23 @@ markdownでは、文字装飾、タイトル付け、箇条書き、表作成、
 - 社内では、One Driveは社内公式用を課金制で利用できる
 - Githubは、なぜか連携できなかった
 
-したがって、下記の使い方が通常だと考えられる。
+
+## Dropboxとの連携が前提の使い方
 - mdファイルの編集：Dillinger
 - pdf出力："PREVIEW AS"でブラウザ上に出力
 - pdf保存："EXPORT AS"でローカルに保存
 - mdファイルの保存："SAVE TO"でDropboxに保存
 - mdファイルのインポート："IMPORT FROM"でDropboxからインポート
 
+## ローカルのみが前提の使い方
+- mdファイルの編集：Dillinger
+- pdf出力："PREVIEW AS"でブラウザ上に出力
+- pdf保存："EXPORT AS"でローカルに保存
+- mdファイルの保存："EXPORT AS"でローカルに保存
+- mdファイルのインポート："IMPORT FROM"でローカルからインポート
+
+
+# Dropboxとの連携方法
 Dropboxとの連携方法を下記に示す。
 
 ## 手順1
@@ -96,3 +106,9 @@ Dropbox連携フォルダ内から、インポートするmdファイルを選�
 **Dillingerの"DOCUMENT NAME"から、ファイル名を変更する。**（そのまま保存すると、テンプレートが上書き保存されてしまう）
 
 後は手順3、4と同様。
+
+
+# 注意事項
+Dropboxは社内公認のクラウドサービスではないため、上の方法は裏技的な利用方法であることに注意されたい。
+
+（本来はY-GitHubという社内用GitHubがあるが、これも申請や課金制なので必要になるし、なぜかGithubとの連携ができないため、今回は諦めた）
