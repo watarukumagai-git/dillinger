@@ -54,7 +54,7 @@ markdownでは、文字装飾、タイトル付け、箇条書き、表作成、
 ## Dropboxと連携させた使い方
 - mdファイルの編集：Dillinger
 - pdf出力："PREVIEW AS"でブラウザ上に出力
-- pdf保存："EXPORT AS"でローカルに保存
+- pdf保存："EXPORT AS"でローカルに保存（その後、手動でDropboxにアップロード）
 - mdファイルの保存："SAVE TO"でDropboxに保存
 - mdファイルのインポート："IMPORT FROM"でDropboxからインポート
 
