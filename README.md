@@ -51,14 +51,14 @@ markdownでは、文字装飾、タイトル付け、箇条書き、表作成、
 - Githubは、なぜか連携できなかった
 
 
-## Dropboxとの連携が前提の使い方
+## Dropboxと連携させた使い方
 - mdファイルの編集：Dillinger
 - pdf出力："PREVIEW AS"でブラウザ上に出力
 - pdf保存："EXPORT AS"でローカルに保存
 - mdファイルの保存："SAVE TO"でDropboxに保存
 - mdファイルのインポート："IMPORT FROM"でDropboxからインポート
 
-## ローカルのみが前提の使い方
+## ローカルのみの使い方
 - mdファイルの編集：Dillinger
 - pdf出力："PREVIEW AS"でブラウザ上に出力
 - pdf保存："EXPORT AS"でローカルに保存
