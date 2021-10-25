@@ -49,6 +49,7 @@ markdownでは、文字装飾、タイトル付け、箇条書き、表作成、
 - 社内では、Google Drive（Googleアプリ系）が公式で利用できない（社内用gmail発行の申請が必要）
 - 社内では、One Driveは社内公式用を課金制で利用できる
 - Githubは、なぜか連携できなかった
+- Bitbucketは、使ったことないからよく知らない、怖い
 
 
 ## Dropboxと連携させた使い方
@@ -75,6 +76,8 @@ Google chromeか、Microsoft Edgeで[Dropbox][url3]を開く。
    [url3]: <https://www.dropbox.com>
 
 Dropboxのアカウントを作成する。
+
+社内メールアドレスよりも、スマホで私用gmailアドレスを取得して登録するほうが認証が楽。
 
 ## 手順2
 [Dillinger][url1]でDropboxと連携させる。
