@@ -70,9 +70,11 @@ markdownでは、文字装飾、タイトル付け、箇条書き、表作成、
 Dropboxとの連携方法を下記に示す。
 
 ## 手順1
-[Dropbox][url3]でアカウントを作成する。
+Google chromeか、Microsoft Edgeで[Dropbox][url3]を開く。
 
    [url3]: <https://www.dropbox.com>
+
+Dropboxのアカウントを作成する。
 
 ## 手順2
 [Dillinger][url1]でDropboxと連携させる。
@@ -111,4 +113,6 @@ Dropbox連携フォルダ内から、インポートするmdファイルを選�
 # 注意事項
 Dropboxは社内公認のクラウドサービスではないため、上の方法は裏技的な利用方法であることに注意されたい。
 
-（本来はY-GitHubという社内用GitHubがあるが、これも申請や課金制なので必要になるし、なぜかGithubとの連携ができないため、今回は諦めた）
+本来はY-GitHub、One Driveなど社内用クラウドサービスを利用したいが、
+これらは申請や課金が必要になるし、
+なぜかGithubは連携ができないため、今回はDropboxにした。
