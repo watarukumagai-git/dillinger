@@ -119,8 +119,7 @@ Dropbox連携フォルダ内から、インポートするmdファイルを選�
 # 注意事項
 Dropboxは社内公認のクラウドサービスではないため、上の方法は裏技的な利用方法であることに注意されたい。
 
-本来はY-GitHub、One Driveなど社内用クラウドサービスを利用したいが、
-これらは申請や課金が必要になるし、
+本来はY-GitHub、One Driveなど社内公認クラウドサービスを利用したいが、これらは申請や課金が必要になるし、
 なぜかGithubは連携ができないため、今回はDropboxにした。
 
 
@@ -134,7 +133,29 @@ Dillingerは、pdfへのエクスポート機能を持つが、日本語を含�
 1. Google Chromeの拡張機能のViewerを使用する方法。
 2. Visual Studio Codeを使用する方法。
 
-## 1. Google Chromeの拡張機能のViewerを使用する方法
 
+## 1. Google Chromeの拡張機能のViewerを使用する方法
+Dilingerで作業し、pdf出力・保存するときだけ、Google Chromeの拡張機能の"Markdown Viewer"を使用する。
+
+"Markdown Viewer"は、ブラウザ（Chrome）上に.mdファイルを表示する機能であり、印刷機能でpdfとして出力する。
+
+ただし、Chromeの拡張機能は、Desktop版でしか使用できないことに注意されたい（スマホではできない）。
+
+### 使用方法
+- mdファイルの編集：Dillinger
+- mdファイルの保存："SAVE TO"でDropboxに保存
+- mdファイルのインポート："IMPORT FROM"でDropboxからインポート
+- pdf出力・保存："Markdown Viewer"でブラウザ上にmdファイルを表示し、印刷機能でpdf出力（その後、手動でDropboxにアップロード）
+
+### 使用手順
+#### 手順1
+mdファイルをブラウザに表示した後、Chromeの印刷機能（ショートカットキー：Ctrl＋P）で、送信先を"pdf"に設定。
+
+#### 手順2
+"Markdown Viewer"でブラウザ上にmdファイルを表示し、印刷機能でpdf出力（その後、手動でDropboxにアップロード）
+
+詳細手順は[Qiitaの記事][url4]を参照。
+
+   [url4]: <https://qiita.com/takachan_coding/items/7a0978a70208e482aae9>
 
 ## 2. Visual Studio Codeを使用する方法
