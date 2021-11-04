@@ -137,7 +137,7 @@ Dilingerでmdファイルを編集し、pdf出力・保存するときだけ、G
 ただし、Chromeの拡張機能は、Desktop版でしか使用できないことに注意されたい（スマホではできない）。
 
 
-[pdf出力例](file:///C:/Users/30029875/Desktop/Denovo%20PJT/Denovo_survey/AlphaDesign/alphadesign.pdf){:target="_blank"}
+[pdf出力例](watarukumagai-git/dillinger/alphadesign.pdf)
 
 
 ### 使用方法
