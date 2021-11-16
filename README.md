@@ -387,11 +387,13 @@ $ 2x+5 = 0 $
 ```
 <a href="https://www.codecogs.com/eqnedit.php?latex=2x+5=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2x+5=0" title="2x+5=0" /></a>
 
-- bold体
+- bold体（太字）、Roman体（立体文字）、italic体（斜体）
 ```
-$ \boldsymbol{x} $
+$ \boldsymbol{x} $、$ \mathrm{x} $、$ \mathit{x} $
 ```
-<a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{x}" title="\boldsymbol{x}" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{x}" title="\boldsymbol{x}" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathrm{x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathrm{x}" title="\mathrm{x}" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathit{x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathit{x}" title="\mathit{x}" /></a>
 
 
 - ギリシャ文字
