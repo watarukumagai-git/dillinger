@@ -211,7 +211,7 @@ dropboxで連携しているフォルダ"Dillinger"内に画像専用のフォ�
 
 ```
 ![shot1.jpg](https://www.dropbox.com/s/grtt5ewg8cxdwe3/shot1.jpg?dl=0&raw=1)
-（![*image name*](*URL*)という形式）
+（![*anchor text*](*URL*)という形式）
 ```
 
 なお、このmdファイルを、Google Chromeの拡張機能の"Markdown Viewer"で出力させても、画像が表示されることを確認した。
@@ -228,7 +228,7 @@ __ただし、勝手にフォルダが作成されるが、他のmarkdownのた�
 画像表示形式を下記のように書き換える。
 
 ```
-![*image name*](*URL*)
+![*anchor text*](*URL*)
 ```
 ↓
 ```
