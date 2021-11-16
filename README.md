@@ -198,7 +198,7 @@ VSコードは、ITエンジニアが良く使うコードエディタである�
 <a id="chapter6"></a>
 # 6. ローカル画像の挿入とリサイズ（2021年11月16日追記）
 
-## 6.1 ローカル画像の挿入方法
+## 6.1 ローカル画像の挿入方法（非推奨）
 
 ### 手順1
 dillingerのmarkdown上に、表示したい画像をdrag&dropする。
@@ -216,10 +216,60 @@ dropboxで連携しているフォルダ"Dillinger"内に画像専用のフォ�
 
 なお、このmdファイルを、Google Chromeの拡張機能の"Markdown Viewer"で出力させても、画像が表示されることを確認した。
 
-__ただし、勝手にフォルダが作成されるが、他のmarkdownのための画像フォルダとは独立に分けたい気がする。現状、その方法はわからないので、とりあえずこの方法で試してください。要調査。__
+__ただし、この方法は勝手にフォルダが作成されるが、他のmarkdownのための画像フォルダとは独立に分けられない。後述の方法が推奨。__
 
 
-## 6.2 ローカル画像のリサイズ方法
+## 6.2 ローカル画像の挿入方法（推奨）
+
+### 手順1
+dropbox内の"Dillinger"フォルダ内で、ドキュメント毎（内容が違うmarkdown毎）にフォルダを作成し、管理する。
+
+さらに、そのフォルダ内に、そのドキュメントで使用する画像ファイル用フォルダ（何でも良いが、"images"とした）を作成し、そこに入れる。
+
+下記のようなイメージ。
+```
+dropbox内のディレクトリ構造
+home                            <=dropboxのhome
+ └── Dillinger
+      ├── docA                  <=docA用フォルダ
+      │    ├── docA.md          <=docAのmarkdownファイル
+      │    └── images           <=docAで使用する画像ファイル用フォルダ
+      │         ├── shotA1.jpg
+      │         └── shotA2.jpg
+      │
+      └── docB                  <=docB用フォルダ
+           ├── docB.md          <=docBのmarkdownファイル
+           └── images           <=docBで使用する画像ファイル用フォルダ
+                ├── shotB1.jpg
+                └── shotB2.jpg
+```
+
+
+### 手順2
+"docA.md"内で、dropbox内の"shotA1.jpg"を挿入することを考える。
+
+まず、dropbox上でその画像ファイルまでアクセスする。
+（上の例だと"/home/Dillinger/docA/images"）
+
+"shotA1.jpg"にチェックし、"その他"から、"リンクをコピー"を押すと、URLをコピーできる。
+
+このURLは、dropbox内のファイルはprivateだが、選択した画像をpublicに公開するためのURLである。
+
+
+### 手順3
+Dillingerの"docA.md"内に、下記形式の画像挿入コマンドにURLをペーストすると、プレビューに画像が表示される。
+
+なお、URL末尾に"&raw=1"を追記しないと表示できないことに注意されたい。
+
+```
+![shotA1.jpg](https://www.dropbox.com/s/grtt5ewg8cxdwe3/shotA1.jpg?dl=0&raw=1)
+（![*anchor text*](*URL*&raw=1)という形式）
+```
+
+なお、このmdファイルを、Google Chromeの拡張機能の"Markdown Viewer"で出力させても、画像が表示されることを確認した。
+
+
+## 6.3 ローカル画像のリサイズ方法
 現状、dillinger上で、ローカル挿入した画像のサイズを変更する方法は見つからなかった。
 
 ただ、下記の方法は、Google Chromeの拡張機能の"Markdown Viewer"では機能することを確認したため、下記方法で問題ないと思われる。
