@@ -379,7 +379,7 @@ MathJax.Hub.Config({
 
 
 ### 対応範囲の記法
-その範囲のLaTex記法は、大体下記が対応していると考えて良い。具体的な記法については、検索すればヒットする。
+その範囲のLaTex記法は、大体下記が対応していると考えて良い。
 
 - ギリシャ文字
 ```
@@ -398,14 +398,25 @@ $ x_{i} $、$ x^{i} $
 
 
 - 総和
-
 ```
-\sum x_{i}、\sum_{i=1}^{n} x_{i}
+$ \sum x_{i} $、$ \sum_{i=1}^{n} x_{i} $
 ```
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sum&space;x_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum&space;x_{i}" title="\sum x_{i}" /></a>
 、
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sum_{i=1}^{n}&space;x_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum_{i=1}^{n}&space;x_{i}" title="\sum_{i=1}^{n} x_{i}" /></a>
 
+
+- 対数関数、三角関数
+```
+$ \log_{a} x $、$ \sin \theta $、$ \cos \theta $、$ \tan \theta $
+```
+<a href="https://www.codecogs.com/eqnedit.php?latex=\log_{a}&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\log_{a}&space;x" title="\log_{a} x" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\sin&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sin&space;\theta" title="\sin \theta" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\cos&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\cos&space;\theta" title="\cos \theta" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\tan&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\tan&space;\theta" title="\tan \theta" /></a>
+
+
+他の具体的な記法については、検索すればヒットする。
 なお、mathjax以外のLaTex記法を使用する場合は、他の設定が必要となる。
 
 
