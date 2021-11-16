@@ -2,6 +2,7 @@
 markdownやDillingerに関する説明。
 
 __2021年11月2日追記：Dillingerでは、日本語フォントを含むmd.ファイルをpdfに変換すると、文字化けする？回避方法は[下記参照](#chapter5)。__
+__2021年11月16日追記：ローカル画像挿入方法は[下記参照](#chapter6)。__
 
 
 ## markdownとは
@@ -193,7 +194,51 @@ VSコードは、ITエンジニアが良く使うコードエディタである�
    [url7]: <https://anteku.jp/blog/develop/visual-studio-code%E3%81%AE%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD%E3%80%8Cmarkdown-pdf%E3%80%8D%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86/>
 
 
-# 6. 注意事項
+
+<a id="chapter6"></a>
+# 6. ローカルの画像の挿入（2021年11月16日追記）
+
+## 6.1 ローカル画像の挿入方法
+
+1. dillingerに表示したい画像をdrug&dropする。
+2. dropboxで連携しているフォルダ"Dillinger"内に画像専用のフォルダ"_images"が自動的に生成され、そこにドロップした画像が保存される。
+3. 同時に、Dillingerのmdファイル内に、下記形式のURL（dropbox上の画像を指定して表示するためのURL）が自動的に生成され、プレビューにも画像が表示される。
+
+```
+![shot1.jpg](https://www.dropbox.com/s/grtt5ewg8cxdwe3/shot1.jpg?dl=0&raw=1)
+```
+（![*image name*](*URL*)という形式）
+
+なお、このmdファイルを、Google Chromeの拡張機能の"Markdown Viewer"で出力させても、画像が表示されることを確認した。
+
+
+## 6.2 ローカル画像のサイズ変更方法
+現状、dillinger上で、ローカル挿入した画像のサイズを変更する方法は見つからなかった。
+ただ、下記の方法は、Google Chromeの拡張機能の"Markdown Viewer"では機能することを確認したため、下記方法で問題ないと思われる。
+
+1. 画像表示形式を下記のように書き換える。
+
+```
+![*image name*](*URL*)
+```
+↓
+```
+<img src="*URL*" width="*size*">
+```
+*size*には、50%などの割合で拡縮したり、300など直接サイズを設定できる。
+縦横スケール固定される、割合が安定。
+
+6.1の例では、 下記のように書き換える。
+```
+<img src="https://www.dropbox.com/s/grtt5ewg8cxdwe3/shot1.jpg?dl=0&raw=1" width="50%">
+```
+
+2. "Markdown Viewer"に出力させると、画像がリサイズされた状態で表示される。
+
+なお、dillinger上では表示されないので、毎回"Markdown Viewer"で出力させないと、実際のサイズがわからないことに注意されたい。
+
+
+# 7. 注意事項
 Dropboxは社内公認のクラウドサービスではないため、上の方法は裏技的な利用方法であることに注意されたい。
 
 本来はY-GitHub、One Driveなど社内公認クラウドサービスを利用したいが、これらは申請や課金が必要になるし、
