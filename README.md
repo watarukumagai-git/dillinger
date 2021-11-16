@@ -387,13 +387,22 @@ $ 2x+5 = 0 $
 ```
 <a href="https://www.codecogs.com/eqnedit.php?latex=2x+5=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2x+5=0" title="2x+5=0" /></a>
 
+- bold体
+```
+$ \boldsymbol{x} $
+```
+<a href="https://www.codecogs.com/eqnedit.php?latex=\boldsymbol{x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\boldsymbol{x}" title="\boldsymbol{x}" /></a>
+
 
 - ギリシャ文字
 ```
-$ \gamma $、$ \Gamma $
+$ \gamma $、$ \Gamma $、$ \delta $、$ \Delta $
 ```
 <a href="https://www.codecogs.com/eqnedit.php?latex=\gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\gamma" title="\gamma" /></a>、
-<a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma" title="\Gamma" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma" title="\Gamma" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\delta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\delta" title="\delta" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Delta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Delta" title="\Delta" /></a>
+
 
 
 - 下付き文字、上付き文字
@@ -413,14 +422,23 @@ $ \sum x_{i} $、$ \sum_{i=1}^{n} x_{i} $
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sum_{i=1}^{n}&space;x_{i}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sum_{i=1}^{n}&space;x_{i}" title="\sum_{i=1}^{n} x_{i}" /></a>
 
 
-- 対数関数、三角関数
+- 対数関数、三角関数、根号、分数
 ```
-$ \log_{a} x $、$ \sin \theta $、$ \cos \theta $、$ \tan \theta $
+$ \log_{a} x $、$ \sin \theta $、$ \cos \theta $、$ \tan \theta $、$ \sqrt{x} $、$ \frac{b}{a} $
 ```
 <a href="https://www.codecogs.com/eqnedit.php?latex=\log_{a}&space;x" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\log_{a}&space;x" title="\log_{a} x" /></a>、
 <a href="https://www.codecogs.com/eqnedit.php?latex=\sin&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sin&space;\theta" title="\sin \theta" /></a>、
 <a href="https://www.codecogs.com/eqnedit.php?latex=\cos&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\cos&space;\theta" title="\cos \theta" /></a>、
-<a href="https://www.codecogs.com/eqnedit.php?latex=\tan&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\tan&space;\theta" title="\tan \theta" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\tan&space;\theta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\tan&space;\theta" title="\tan \theta" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\sqrt{x}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\sqrt{x}" title="\sqrt{x}" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{b}{a}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{b}{a}" title="\frac{b}{a}" /></a>
+
+
+- 化学反応式
+```
+A+B\overset{k_{\alpha}}{\rightarrow}C
+```
+<a href="https://www.codecogs.com/eqnedit.php?latex=A&plus;B\overset{k_{\alpha}}{\rightarrow}C" target="_blank"><img src="https://latex.codecogs.com/gif.latex?A&plus;B\overset{k_{\alpha}}{\rightarrow}C" title="A+B\overset{k_{\alpha}}{\rightarrow}C" /></a>
 
 
 他の具体的な記法については、検索すればヒットする。
