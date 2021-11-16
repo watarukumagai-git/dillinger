@@ -130,7 +130,7 @@ Dillingerは、pdfへのエクスポート機能を持つが、日本語を含�
 
 どちらも手間がかかるが、手間が少ないのは1だと考えられる。
 
-## 1. Google Chromeの拡張機能のViewerを使用する方法
+## 5.1 Google Chromeの拡張機能のViewerを使用する方法
 Dilingerでmdファイルを編集し、pdf出力・保存するときだけ、Google Chromeの拡張機能の"Markdown Viewer"を使用する。
 
 "Markdown Viewer"は、ブラウザ（Chrome）上に.mdファイルを表示する機能であり、印刷機能でpdfとして出力する。
@@ -173,7 +173,7 @@ Chromeの印刷機能（ショートカットキー：Ctrl＋P）で、送信先
 
 それ以降は手順3、4だけに従えば良い。
 
-## 2. Visual Studio Codeを使用する方法
+## 5.2 Visual Studio Codeを使用する方法
 Dillingerを使うのを止めて、Visual Studio Code（VSコード）でmdファイルを編集し、VSコードの拡張機能"Markdown PDF"を使用してpdf出力する。
 
 VSコードは、ITエンジニアが良く使うコードエディタである。
