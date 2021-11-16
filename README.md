@@ -201,7 +201,7 @@ VSコードは、ITエンジニアが良く使うコードエディタである�
 ## 6.1 ローカル画像の挿入方法
 
 ### 手順1
-dillingerのmarkdown上に、表示したい画像をdrug&dropする。
+dillingerのmarkdown上に、表示したい画像をdrag&dropする。
 
 ### 手順2
 dropboxで連携しているフォルダ"Dillinger"内に画像専用のフォルダ"_images"が自動的に生成され、そこにドロップした画像が保存される。
