@@ -367,24 +367,31 @@ MathJax.Hub.Config({
 ## 7.3 LaTex記法
 上記設定により、markdownでも、mathjaxで対応している範囲のLaTex記法が使用可能になった。
 
-- テキストスタイル、インライン数式モード
-文章中にLaTex記法を入力するモード。
-ドルマーク（$ $）で囲まれる範囲にLaTex記法を書くと、認識される。
+### 表示スタイル
+- テキストスタイル（インライン数式モード）
+   - 文章中にLaTex記法を適用するモード。
+   - ドルマーク（$ $）で囲まれる範囲にLaTex記法を書くと、認識される。
 
-- ディスプレイスタイル
-新しい段落にLaTex記法を入力するモード
+- ディスプレイスタイル（ディスプレイ数式モード）
+   - 新しい段落にLaTex記法を適用するモード。
+   - 特に、数式を大きく書き、数式番号を付けたいときに使う。
+   - 二重のドルマーク（$$ $$）で囲まれる範囲にLaTex記法を書くと、認識される。
 
 
-その範囲のLaTex記法は大体下記のイメージだと考えて良い。
-
-
+### 対応範囲の記法
+その範囲のLaTex記法は大体下記のイメージだと考えて良い。具体的な記法については、検索すればヒットする。
 
 - ギリシャ文字
 ```
-$ \alpha $
+$ \gamma $、$ \Gamma $
 ```
+↓
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=\gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\gamma" title="\gamma" /></a>、
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma" title="\Gamma" /></a>
+
+
+- 
 
 なお、mathjax以外のLaTex記法を使用する場合は、他の設定が必要となる。
 
