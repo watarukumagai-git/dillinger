@@ -3,7 +3,7 @@ markdownやDillingerに関する説明。
 
 - __2021年11月2日追記：Dillingerでは、日本語フォントを含むmd.ファイルをpdfに変換すると、文字化けする？回避方法は[下記参照](#chapter5)。__
 - __2021年11月16日追記：ローカル画像の挿入方法は[下記参照](#chapter6)。__
-- __2021年11月16日追記：数式やギリシャ文字をきれいに出力する方法は[下記参照](#chapter7)。__
+- __2021年11月16日追記：数式や特殊文字をきれいに出力する方法は[下記参照](#chapter7)。__
 
 
 ## markdownとは
@@ -310,20 +310,60 @@ Dillingerの"docA.md"内に、下記形式の画像挿入コマンドにURLを�
 
 
 <a id="chapter7"></a>
-# 7. 数式やギリシャ文字の表示方法（2021年11月16日追記）
+# 7. 数式や特殊文字の表示方法（2021年11月16日追記）
 ## LaTeX
 LaTeX（ラテック、ラテフ）とは、文書エディタソフトの一つである。
 
-基本的に、MS Wordと同じ利用目的だが、数式や特殊文字などをきれいに表示するのに適している。
+基本的に、MS Wordと同じ利用目的だが、数式や特殊文字などを美しく表示するのに適している（MS Wordでは細かい表示制御が不可能）。
 
 このため、科学系の国際会議では、論文フォーマットとして、MS WordとLaTexの二つは必ず提供されている。
 
-数式を執筆する文化のある分野では、LaTexで執筆する厳しい（？）訓練が必要。
+数式を執筆する文化のある分野では、LaTexで執筆する厳しい（？）訓練を受ける必要がある。
 
-最近では、LaTex以外のエディタでも、きれいに数式や特殊文字を表示させたいニーズが高い背景から、
+最近では、LaTex以外のエディタでも、数式や特殊文字を美しく表示させたいニーズが高い背景から、
 LaTexの記法を使うだけで、LaTex-likeな数式や特殊文字の表示が可能なエディタが増えてきた。
 
-## 
+Dillingerも同様で、標準機能としてLaTex記法に対応しており、LaTex-likeな特殊文字の表示が可能である。
+
+
+## Markdown ViewerでのLaTex記法の使用方法
+"Markdown Viewer"では、標準的にLaTex記法に対応していないが、下記の設定によりある程度可能になる。
+
+### 手順1：mdファイルへの追記
+下記のコードをmdファイルの先頭にコピー&ペーストする。
+
+```
+<p>
+<script type="text/x-mathjax-config">// <![CDATA[
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+  }
+});
+// ]]></script>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">// <![CDATA[
+
+// ]]></script>
+</p>
+```
+
+これはhtml設定を変更するコード。"MathJax.js"というJavaScriptライブラリを追加しており、LaTex記法がweb上で表示されるようになる（理解する必要無し）。
+
+
+### 手順2：Markdown Viewerの設定
+- Chromeの拡張機能の設定画面（chrome://extensions/）を開く。
+- Markdown Viewerの"詳細"を押し、"拡張機能のオプション"を開く。
+- オプション画面で、URL入力欄右側にMarkdown Viewerのアイコンを押すと、小さな設定画面を表示される。
+- "CONTENT"の"mathjax"をオンにして、オプション画面を閉じる。
+
+
+### 手順3：Markdown Viewerへのドロップ
+
+これで、markdown
+
+設定画面については[Qiitaの記事][url6]を参照。
+
 
 dillingerでは、$ \alpha $って打つと、きれいにギリシャ文字や数式を表示できるんだよね。（LaTex形式って言います）
 
