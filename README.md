@@ -366,10 +366,25 @@ MathJax.Hub.Config({
 
 ## 7.3 LaTex記法
 上記設定により、markdownでも、mathjaxで対応している範囲のLaTex記法が使用可能になった。
+
+- テキストスタイル、インライン数式モード
+文章中にLaTex記法を入力するモード。
+ドルマーク（$ $）で囲まれる範囲にLaTex記法を書くと、認識される。
+
+- ディスプレイスタイル
+新しい段落にLaTex記法を入力するモード
+
+
 その範囲のLaTex記法は大体下記のイメージだと考えて良い。
 
+
+
 - ギリシャ文字
-$ \alpha $って打つと、きれいにギリシャ文字や数式を表示できるんだよね。（LaTex形式って言います）
+```
+$ \alpha $
+```
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a>
 
 なお、mathjax以外のLaTex記法を使用する場合は、他の設定が必要となる。
 
