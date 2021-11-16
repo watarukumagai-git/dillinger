@@ -381,6 +381,13 @@ MathJax.Hub.Config({
 ### 対応範囲の記法
 その範囲のLaTex記法は、大体下記が対応していると考えて良い。
 
+- 数字・アルファベット・等号
+```
+$ 2x+5 = 0 $
+```
+<a href="https://www.codecogs.com/eqnedit.php?latex=2x+5=0" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2x+5=0" title="2x+5=0" /></a>
+
+
 - ギリシャ文字
 ```
 $ \gamma $、$ \Gamma $
